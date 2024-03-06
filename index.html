@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinos Incríveis</title>
+    <link href="/lib/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Destinos Incríveis</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#destaques">Destaques</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#pacotes">Pacotes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contato">Contato</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-5">
+  <section id="destaques">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/images/ipanema.jpg" class="d-block w-100" alt="Destino 1">
+        </div>
+        <div class="carousel-item">
+          <img src="/images/Fernando-De-Noronha.jpg" class="d-block w-100" alt="Destino 2">
+        </div>
+        <div class="carousel-item">
+          <img src="/images/curitiba.jpg" class="d-block w-100" alt="Destino 3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <section id="pacotes" class="mt-5">
+    <h2 class="mb-4">Pacotes de Viagem</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="/images/ipanema.jpg" class="card-img-top" alt="Pacote 1 Ipanema">
+          <div class="card-body">
+            <h5 class="card-title">Pacote Praias Paradisíacas em Ipanema</h5>
+            <p class="card-text">Explore as mais belas praias com tudo incluído.</p>
+            <a href="#" class="btn btn-primary">Saiba Mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="/images/curitiba.jpg" class="card-img-top" alt="Pacote 1 Ipanema">
+          <div class="card-body">
+            <h5 class="card-title">Pacote Jardim Botanico Curitiba</h5>
+            <p class="card-text">Explore os melhores pontos turisticos de Curitiba.</p>
+            <a href="#" class="btn btn-primary">Saiba Mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="/images/Fernando-De-Noronha.jpg" class="card-img-top" alt="Pacote 1 Ipanema">
+          <div class="card-body">
+            <h5 class="card-title">Pacote Fernando De Noronha</h5>
+            <p class="card-text">Explore as mais belas praias com tudo incluído.</p>
+            <a href="#" class="btn btn-primary">Saiba Mais</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="mt-5">
+    <h2 class="mb-4">Entre em Contato</h2>
+    <form>
+      <div class="mb-3">
+        <label for="nome" class="form-label">Nome</label>
+        <input type="text" class="form-control" id="nome" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="mensagem" class="form-label">Mensagem</label>
+        <textarea class="form-control" id="mensagem" rows="3" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </section>
+</div>
+
+<footer class="text-center py-4 bg-primary text-light mt-5">
+  © 2024 Destinos Incríveis. Todos os direitos reservados.
+</footer>
+
+<script src="/lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
